@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>坦克大战 - HTML5</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title">🛡️ 坦克大战</h1>
+
+  <div id="wrap">
+    <div id="stage">
+      <canvas id="game" width="640" height="640"></canvas>
+      <div id="overlay"></div>
+    </div>
+
+    <div id="panel">
+      <div class="stat"><span>得分</span><b id="score">0</b></div>
+      <div class="stat"><span>关卡</span><b id="level">1</b></div>
+      <div class="stat"><span>生命</span><b id="lives">3</b></div>
+      <div class="stat"><span>剩余敌人</span><b id="enemies">0</b></div>
+
+      <div class="help">
+        <h2>操作说明</h2>
+        <p><kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> / <kbd>WASD</kbd> 移动</p>
+        <p><kbd>空格</kbd> / <kbd>J</kbd> 射击</p>
+        <p><kbd>P</kbd> 暂停</p>
+        <p><kbd>Enter</kbd> 开始 / 重新开始</p>
+      </div>
+
+      <div class="tip">
+        <h2>游戏规则</h2>
+        <p>🌟 保护底部的金色基地，消灭所有敌方坦克即可过关。</p>
+        <p>🧱 砖墙可以被炮弹击破，⬜ 钢墙无法摧毁，🌊 河流阻挡坦克通行，🌿 草丛可以隐蔽。</p>
+        <p>敌方有三种坦克：灰色普通型、蓝色快速型、红色重型（需击中 2 次）。</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>HTML5 Canvas 纯手写实现 · 无任何依赖</footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
