@@ -79,6 +79,53 @@ canvas {
   animation: blink 1s infinite;
 }
 
+/* Buff 三选一卡片 */
+.buffs {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.buff {
+  background: #252540;
+  border: 2px solid #3a3a5e;
+  border-radius: 10px;
+  padding: 16px 14px;
+  width: 160px;
+  cursor: pointer;
+  color: #eee;
+  text-align: center;
+  font-family: inherit;
+  transition: transform 0.15s, border-color 0.15s;
+}
+
+.buff:hover {
+  border-color: #ffd23f;
+  transform: translateY(-4px);
+}
+
+.buff b {
+  display: block;
+  color: #ffd23f;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.buff span {
+  display: block;
+  font-size: 13px;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.buff em {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  font-size: 12px;
+  color: #7cf29c;
+}
+
 @keyframes blink {
   50% { opacity: 0; }
 }
